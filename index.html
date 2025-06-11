@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Dabria</title>
+    <link rel="icon" type="image/png" href="assets/images/sobrecito.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">(❁´◡`❁) Para Naomi Garcia (～￣▽￣)～</h1>
+
+        <div class="envelopes-container">
+            <div class="envelope" onclick="openEnvelope(this)">
+                <div class="envelope-flap"></div>
+                <div class="envelope-content">
+                    <p>Mi Querida Dabria,</p>
+                    <p>¡Wuenas, wuenas, mi solecito! Al fin logré plasmar en palabras este pequeño regalito para ti,
+                        hecho con todo el cariño que llevo dentro. Puede que no sea algo inmenso, pero cada letra está
+                        dedicada a alguien tan especial como tú. Últimamente, mi corazón no para de susurrar tu nombre,
+                        y si me preguntaras por qué, te miraría con una sonrisa tímida y te diría: porque eres un sueño
+                        del que no quiero despertar, ¡eres perfecta! >3 Aquella noche de nuestra última llamada fue como
+                        abrir un baul, un momento que me llevó de vuelta a cuando hablábamos sin fin. Sentirte tan
+                        cerca, aunque estemos a kilómetros, me hizo vibrar el alma. Me emociona ver cómo hemos crecido,
+                        cada uno trazando su rumbo, pero aún con ese lazo que nos une. Todavía guardo en mi pecho el
+                        instante en que dijiste que dijiste que esperarías por mí… ¡Uff, me dejaste sin aliento! En casi
+                        21 años, nadie había tocado mi corazón con palabras tan sinceras, tan tuyas, tan llenas de
+                        verdad.</p>
+                </div>
+            </div>
+
+            <div class="envelope" onclick="openEnvelope(this)">
+                <div class="envelope-flap"></div>
+                <div class="envelope-content">
+                    <p>Mi querida Dabria,</p>
+                    <p>Sé que esto puede sonar un poquito loco, o tal vez te robe una risita, jsjsjs Pero, ¿sabes qué?
+                        Aunque el tiempo ha pasado, tú sigues brillando en mi mente como una estrella que no se apaga.
+                        Tus consejos, esa forma tan tuya de recordarme que coma a tiempo, las bendiciones que me das
+                        cuando salgo, o simplemente el cariño con el que me preguntas cómo estoy… Todo eso es como un
+                        abrazo que me envuelve. Hay algo en ti que me acelera el pulso, que me cautiva, que me hace
+                        suspirar, ¡diavlo, me tiene loco de amor! Y luego están esos detalles que me has dado, esos
+                        regalitos que valen más que el oro porque llevan tu corazón. Nadie, nunca, había hecho algo tan
+                        hermoso por mí. Tú, con tu amor puro y sincero, has pintado mi mundo de colores que no conocía.
+                    </p>
+                    <p>Te lo escribe tu bello hombre,</p>
+                    <p>Ricky</p>
+                </div>
+            </div>
+
+            <div class="envelope special" onclick="openSpecialEnvelope(this)">
+                <div class="envelope-flap"></div>
+                <div class="envelope-content">
+                    <p>Naomi Garcia >3,</p>
+                    <p>Esto que voy a decir puede sonar curioso, o quizás te saque una sonrisa traviesa, jsjs, pero aquí
+                        va mi corazón: ¿te gustaría escribir una nueva historia conmigo? No como antes, sino una
+                        aventura diferente, donde los dos soñemos en grande, donde planeemos cada paso con amor y
+                        esperemos ese día en que por fin nos encontremos para darnos un abrazo que diga todo lo que las
+                        palabras no alcanzan. ¿Qué dices, mi cielo? ¿Te animas a caminar juntos, despacito, pero con el
+                        corazón bien abierto?</p>
+                    <button class="confetti-button">¡Si!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confetti-container"></div>
+
+    <!-- Elementos de audio -->
+    <audio id="envelope-open" preload="auto">
+        <source src="assets/sounds/envelope-open.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="special-envelope" preload="auto">
+        <source src="assets/sounds/special-envelope.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="confetti-sound" preload="auto">
+        <source src="assets/sounds/confetti.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
